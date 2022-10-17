@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <span className="text-white font-medium text-sm">
             Entre em contato comigo
           </span>
-          <div className="bg-slate-600 w-full rounded-md outline-none px-4 py-3 mt-6 border border-slate-500">
+          <div className="bg-slate-600 w-full rounded-md outline-none px-4 py-3 mt-4 border border-slate-500">
             <span className="text-white text-sm">
               enzo.rodrigues2@gmail.com
             </span>
