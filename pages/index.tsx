@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import profile from "/public/profile.png";
+import ProfileImage from "/public/profile.png";
 import { Sun, List } from "phosphor-react";
 
 const Home: NextPage = () => {
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </nav>
       <main className="flex flex-col items-center mt-6">
         <Image
-          src={profile}
+          src={ProfileImage}
           width={128}
           height={128}
           alt="Enzo's Emoji"
