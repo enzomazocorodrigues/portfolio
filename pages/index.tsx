@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Sun, List } from "phosphor-react";
 import { Button } from "../components/Button";
 import { Heading } from "../components/Heading";
+import { Text } from "../components/Text";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,21 @@ const Home: NextPage = () => {
           <section className="flex flex-col gap-4 mt-10 w-full">
             <Button className="bg-sky-800">Me adicione no LinkedIn</Button>
             <Button className="bg-gray-900">Visite meu GitHub</Button>
+          </section>
+          <section className="mt-10 w-full flex flex-col">
+            <Heading small>Um pouco sobre mim</Heading>
+            <Text className="mt-6" small>
+              Me chamo Enzo Mazoco Rodrigues, tenho 19 anos e nasci em São
+              Paulo, Brasil. Comecei a ter contato com lógica de programação
+              desde os 12 anos através do meu pai. Desde então, sempre continuei
+              a me aprofundar neste mundo.
+            </Text>
+            <Text small>
+              Hoje, seguramente, posso dizer que sou experiente em
+              desenvolvimento em aplicações full-stack baseadas em Node.js.
+              Pretendo expandir meu conhecimento sobre o mundo Node.js e dominar
+              outras ferramentas que ele pode oferecer.
+            </Text>
           </section>
         </main>
       </div>
