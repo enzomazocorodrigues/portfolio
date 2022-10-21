@@ -3,7 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Sun, List } from "phosphor-react";
 import { Button } from "../components/Button";
+import { Card } from "../components/Card";
 import { Heading } from "../components/Heading";
+import { Input } from "../components/Input";
 import { Text } from "../components/Text";
 
 const Home: NextPage = () => {
@@ -53,6 +55,19 @@ const Home: NextPage = () => {
             <Heading small>Minhas habilidades</Heading>
           </section>
         </main>
+        <footer className="w-full mt-8 bg-slate-900 p-8 flex flex-col items-center">
+          <div className="w-full flex flex-col gap-8 max-w-md">
+            <Card className="w-full flex flex-col gap-4">
+              <Text className="font-semibold">Entre em contato comigo</Text>
+              <Input value="enzo.rodrigues2@gmail.com" disabled />
+              <Button className="bg-blue-500">Copiar</Button>
+            </Card>
+            <div className="w-full flex flex-col gap-4">
+              <Button className="bg-sky-800">Me adicione no LinkedIn</Button>
+              <Button className="bg-gray-800">Visite meu GitHub</Button>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
