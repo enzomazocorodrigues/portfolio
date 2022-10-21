@@ -15,10 +15,10 @@ const Home: NextPage = () => {
         <title>Enzo Mazoco</title>
       </Head>
       <div className="h-full w-full bg-slate-800 font-mono flex flex-col items-center">
-        <nav className="w-full flex justify-end gap-4 p-8">
+        <header className="w-full flex justify-end gap-4 p-8">
           <Sun className="text-amber-300" size={32}></Sun>
           <List className="text-slate-500" size={32}></List>
-        </nav>
+        </header>
         <main className="flex flex-col items-center mt-6 max-w-md mx-8">
           <Image
             src="/profile.png"
