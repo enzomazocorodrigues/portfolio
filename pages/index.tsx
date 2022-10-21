@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Avatar from "../public/images/avatar.png";
 import { Sun, List } from "phosphor-react";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
@@ -20,12 +21,7 @@ const Home: NextPage = () => {
           <List className="text-slate-500" size={32}></List>
         </header>
         <main className="flex flex-col items-center mt-6 max-w-md mx-8">
-          <Image
-            src="/profile.png"
-            width={128}
-            height={128}
-            alt="Enzo's Emoji"
-          />
+          <Image src={Avatar} width={128} height={128} alt="Enzo's Emoji" />
           <Heading className="w-[195px] mt-4 text-center">
             Olá, eu sou o Enzo Mazoco
           </Heading>
