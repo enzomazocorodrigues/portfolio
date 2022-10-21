@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Sun, List } from "phosphor-react";
+import { Button } from "../components/Button";
+import { Heading } from "../components/Heading";
 
 const Home: NextPage = () => {
   return (
@@ -20,23 +22,14 @@ const Home: NextPage = () => {
             width={128}
             height={128}
             alt="Enzo's Emoji"
-          ></Image>
-          <h1 className="text-2xl font-bold text-white w-[195px] text-center mt-4">
+          />
+          <Heading className="w-[195px] mt-4 text-center">
             Olá, eu sou o Enzo Mazoco
-          </h1>
-          <div className="w-80 flex flex-col px-3 py-4 mt-10 bg-slate-700 border border-slate-500 rounded-md">
-            <span className="text-white font-medium text-sm">
-              Entre em contato comigo
-            </span>
-            <div className="bg-slate-600 w-full rounded-md outline-none px-4 py-3 mt-4 border border-slate-500">
-              <span className="text-white text-sm">
-                enzo.rodrigues2@gmail.com
-              </span>
-            </div>
-            <button className="w-full mt-4 text-sm text-white text-center py-3 bg-blue-500 rounded-md hover:bg-blue-500/75">
-              Copiar
-            </button>
-          </div>
+          </Heading>
+          <section className="flex flex-col gap-4 mt-10 w-full">
+            <Button className="bg-sky-800">Me adicione no LinkedIn</Button>
+            <Button className="bg-gray-900">Visite meu GitHub</Button>
+          </section>
         </main>
       </div>
     </>
