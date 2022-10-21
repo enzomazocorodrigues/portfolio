@@ -46,6 +46,12 @@ const Home: NextPage = () => {
               outras ferramentas que ele pode oferecer.
             </Text>
           </section>
+          <section className="mt-10 w-full flex flex-col">
+            <Heading small>Meus projetos</Heading>
+          </section>
+          <section className="mt-10 w-full flex flex-col">
+            <Heading small>Minhas habilidades</Heading>
+          </section>
         </main>
       </div>
     </>
